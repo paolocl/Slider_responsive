@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+.slider {
+	width: 50%;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+
+
+/*FLECHE*/
+
+.fleches {
+	height: 100%;
+	position: absolute;
+	z-index: 9;
+	transition: 0.3s linear;
+}
+
+.fleches img {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+.right {
+	right: 0%;
+}
+
+.left {
+	left: -48px;
+}
+
+
+/*DOTE*/
+
+.dote {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1em;
+	height: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.fa-circle {
+	padding: 3px;
+}
+
+
+/*SLIDER*/
+
+.slider:hover .annexe .left {
+	left: 0%;
+}
+
+.slider:hover .annexe .right {
+	right: 48px;
+}
+
+.slides {
+	width: 1200%;
+	/*NOmbre de slides*/
+	display: flex;
+	position: relative;
+	left: -100%;
+	/*Mouv*/
+	transition: 0.3s;
+}
+
+.imgCont {
+	width: 100%;
+	background: black;
+	display: flex;
+	align-items: center;
+}
+
+.imgCont img {
+	width: 100%;
+}
